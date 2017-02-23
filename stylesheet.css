@@ -1,11 +1,29 @@
+html,body {
+margin:0;
+padding:0;
+}
+
+
+
 #banner {
 	height: 46px;
-	font-size: 22px;
+	font-size: 40px;
 	color: rgb(0, 0, 0);
-	background-color: #85c1db;
+	background-color: #72dcf9;
+	padding-left: 10px;
+}
+
+#intro {
+	text-align: center;
+	padding: 20px 250px 20px 250px;
 }
 
 #pro_pic {
-	display: block;
+	height: 30%;
+	width: 30%;
+	display: inline-block;
 	border-radius: 50%;
+	border: 10px solid #111;
+	margin: 0 auto;
+
 }
