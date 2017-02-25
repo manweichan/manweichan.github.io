@@ -15,15 +15,54 @@ padding:0;
 
 #intro {
 	text-align: center;
-	padding: 20px 250px 20px 250px;
+	padding: 20px 225px 20px 225px;
 }
 
 #pro_pic {
-	height: 30%;
-	width: 30%;
+	width: 300px;
+	display: inline-block;
+	border-radius: 50%;
+	border: 10px solid #111;
+	/*float: left;*/
+
+}
+
+#professional{
+	text-align: center;
+	display: inline-block;
+}
+
+#fun_pic{
+	width: 300px;
 	display: inline-block;
 	border-radius: 50%;
 	border: 10px solid #111;
 	margin: 0 auto;
-
 }
+
+#twopics{
+	display: inline-block;
+	margin: auto;
+	vertical-align: middle;
+	text-align: center;
+}
+
+
+.pics{
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+.caption{
+	font-size: 30px;
+	display: block;
+}
+
+/*
+.pic_text{
+	font-size: 30px;
+	display: inline-block;
+}
+*/
