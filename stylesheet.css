@@ -3,7 +3,9 @@ margin:0;
 padding:0;
 }
 
-
+#content{
+	text-align: center;
+}
 
 #banner {
 	height: 46px;
@@ -14,7 +16,6 @@ padding:0;
 }
 
 #intro {
-	text-align: center;
 	padding: 20px 225px 20px 225px;
 }
 
@@ -28,7 +29,10 @@ padding:0;
 }
 
 #professional{
-	text-align: center;
+	display: inline-block;
+}
+
+#fun{
 	display: inline-block;
 }
 
@@ -49,7 +53,6 @@ padding:0;
 
 
 .pics{
-	text-align: center;
 	display: inline-block;
 	vertical-align: middle;
 }
