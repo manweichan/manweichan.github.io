@@ -17,15 +17,13 @@ padding:0;
 
 #intro {
 	padding: 20px 225px 20px 225px;
+	font-size: 18px;
 }
 
 #pro_pic {
 	width: 300px;
-	display: inline-block;
 	border-radius: 50%;
 	border: 10px solid #111;
-	/*float: left;*/
-
 }
 
 #professional{
@@ -38,34 +36,43 @@ padding:0;
 
 #fun_pic{
 	width: 300px;
-	display: inline-block;
 	border-radius: 50%;
 	border: 10px solid #111;
 	margin: 0 auto;
 }
 
 #twopics{
-	display: inline-block;
 	margin: auto;
-	vertical-align: middle;
-	text-align: center;
-}
-
-
-.pics{
-	display: inline-block;
 	vertical-align: middle;
 }
 
 
 .caption{
+	padding-top: 10px;
 	font-size: 30px;
 	display: block;
 }
 
-/*
-.pic_text{
-	font-size: 30px;
-	display: inline-block;
+.button { transition: all .2s ease-in-out; }
+.button:hover { transform: scale(1.1); }
+
+a.nav-link:link
+{
+   color: #000000;
+   text-decoration: none;
 }
-*/
+a.nav-link:visited
+{
+   color: #000000;
+   text-decoration: none;
+}
+a.nav-link:hover
+{
+   color: #000000;
+   text-decoration: none;
+}
+a.nav-link:active
+{
+   color: #000000;
+   text-decoration: none;
+}
