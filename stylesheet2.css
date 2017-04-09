@@ -81,21 +81,20 @@ h2{
     text-align: justify;
     -ms-text-justify: distribute-all-lines;
     text-justify: distribute-all-lines;
+    display: table;
 }
 
-.stretch {
+/*.stretch {
     width: 100%;
     display: inline-block;
     font-size: 0;
     line-height: 0
-}
-
-/*#links{
-    background-color: #333;
 }*/
 
+
 .link_photos{
-    display: inline-block;
+    /*display: inline-block;*/
+    display: table-cell;
     padding-bottom: 125px;
 }
 
@@ -103,7 +102,9 @@ h2{
     padding-top: 125px;
     position: relative;
     float: center;
-    width: 250px;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
     background-position: 50% 50%;
     background-repeat:   no-repeat;
     background-size:     cover;    
@@ -118,9 +119,9 @@ h2{
 }
 
 #pic_me{
-    padding-left: 50px;
+    padding-left: 25px;
 }
 
 #pic_travel{
-    padding-right: 50px;
+    padding-right: 25px;
 }
