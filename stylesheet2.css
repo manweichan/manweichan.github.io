@@ -84,16 +84,8 @@ h2{
     display: table;
 }
 
-/*.stretch {
-    width: 100%;
-    display: inline-block;
-    font-size: 0;
-    line-height: 0
-}*/
-
 
 .link_photos{
-    /*display: inline-block;*/
     display: table-cell;
     padding-bottom: 125px;
 }
@@ -107,8 +99,27 @@ h2{
     height: auto;
     background-position: 50% 50%;
     background-repeat:   no-repeat;
-    background-size:     cover;    
+    background-size:     cover; 
+
 }
+
+.nav_photos:hover{
+    -moz-box-shadow: 0px 5px 0px #ccc;
+    -webkit-box-shadow: 0px 5px 0px #ccc; 
+    box-shadow: 0px 5px 0   0px #ccc; 
+}
+
+/*#me_pic_color{
+    display: none;
+}
+*/
+/*#me_pic:hover{
+    display: none;
+}
+
+#me_pic_color:hover{
+    display: block;
+}*/
 
 .caption{
     padding-top: 10px;
@@ -120,6 +131,10 @@ h2{
 
 #pic_me{
     padding-left: 25px;
+}
+
+#class_pic:hover {
+    background: url("pics/life_pic1.jpg") no-repeat;
 }
 
 #pic_travel{
