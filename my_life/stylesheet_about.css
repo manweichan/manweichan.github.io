@@ -42,14 +42,70 @@ padding:0;
     color: white;
 }
 
-.darken{
+.welcome_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-family: 'Cuprum', sans-serif;
+}
+
+h1{
+    margin: 0;
+    font-size: 7rem;
+    white-space: nowrap;
+}
+
+h2{
+    font-size: 3em;
+    text-align: center;
+    padding: 10% 200px 10% 200px;
+    font-family: 'Indie Flower', cursive;
+}
+
+.hor_line {
+    height: 10px;
+    border: 0;
+    box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+#my_life{
     display: block;
     width: 100%;
     height: auto;
-    background-image: 
-    linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
-    ),
-    url("../pics/life_pic1.jpg");
+}
+
+h3{
+    float: left;
+    width: 20%;
+    /*padding-left: 5%;*/
+}
+
+#my_story{
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.content{
+    float: right;
+    width: 75%;
+    font-family: 'Cabin', sans-serif;
+}
+
+#early_period_content{
+    display: inline-block;
+}
+
+#university_content{
+    display: inline-block;
+}
+
+#spda_content{
+    display: inline-block;
+}
+
+#future_content{
+    display: inline-block;
 }
