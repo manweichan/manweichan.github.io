@@ -17,6 +17,8 @@ padding:0;
     font-size: 17px;
     padding-top: 6px;
     padding-left: 30%;
+/*    display: flex;
+    justify-content: space-around;*/
 }
 
 /* Style the links inside the navigation bar */
@@ -27,6 +29,7 @@ padding:0;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+
     /*font-size: 17px;*/
 }
 

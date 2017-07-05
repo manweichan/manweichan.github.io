@@ -89,6 +89,7 @@ h3{
 }
 
 .content{
+    line-height: 1.5;
     float: right;
     width: 75%;
     font-family: 'Cabin', sans-serif;
@@ -109,3 +110,8 @@ h3{
 #future_content{
     display: inline-block;
 }
+
+/*#future_para{
+    width: 75%;
+    float: right;
+}*/
