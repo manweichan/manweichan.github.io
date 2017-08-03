@@ -79,7 +79,7 @@ padding:0;
 
 
 #tatio_main{
-    background-image: url("../../../Images/classics_bg_web.jpeg");
+    background-image: url("../../../Images/Tatio/classics_bg_web.jpeg");
     background-position: center top;
     background-size: 100% auto;
     -webkit-background-size: cover;
@@ -156,7 +156,7 @@ h2 {
 
 
 #insider_pic_container{
-  background-image: url("../../../Images/tatio_pool_web.jpg");
+  background-image: url("../../../Images/Tatio/tatio_pool_web.jpg");
   background-size: cover;
 
   width: calc(100%/3);

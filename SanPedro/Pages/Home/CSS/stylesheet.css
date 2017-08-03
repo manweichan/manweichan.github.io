@@ -79,9 +79,9 @@ padding:0;
 }
 
 #landing{
-    background-image: url("../../../Images/sunset_web.jpg");
+    background-image: url("../../../Images/Toco/sunset_web.jpg");
     background-position: center top;
-    background-size: 100% auto;
+    background-size: 100% 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
