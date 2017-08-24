@@ -7,13 +7,30 @@ function myFunction() {
     }
 }
 
-$('.grid').masonry({
-  // set itemSelector so .grid-sizer is not used in layout
+// external js: masonry.pkgd.js, imagesloaded.pkgd.js
+
+// init Masonry after all images have loaded
+// var $grid = $('.grid').imagesLoaded( function() {
+//   $grid.masonry({
+//     itemSelector: '.grid-item',
+//     percentPosition: true,
+//     columnWidth: '.grid-sizer'
+//   }); 
+// });
+
+// external js: masonry.pkgd.js, imagesloaded.pkgd.js
+
+// init Masonry
+var $grid = $('.grid').masonry({
   itemSelector: '.grid-item',
-  // use element for option
-  columnWidth: '.grid-sizer',
-  percentPosition: true
-})
+  percentPosition: true,
+  columnWidth: '.grid-sizer'
+});
+// layout Masonry after each image loads
+$grid.imagesLoaded().progress( function() {
+  $grid.masonry('layout');
+});  
+
 
 // // jQuery
 // $grid.masonry()
