@@ -7,6 +7,8 @@ function myFunction() {
     }
 }
 
+
+
 // external js: masonry.pkgd.js, imagesloaded.pkgd.js
 
 // init Masonry after all images have loaded
@@ -21,16 +23,32 @@ function myFunction() {
 // external js: masonry.pkgd.js, imagesloaded.pkgd.js
 
 // init Masonry
-var $grid = $('.grid').masonry({
-  itemSelector: '.grid-item',
-  percentPosition: true,
-  columnWidth: '.grid-sizer'
-});
-// layout Masonry after each image loads
-$grid.imagesLoaded().progress( function() {
-  $grid.masonry('layout');
-});  
+// var $grid = $('.grid').masonry({
+//   itemSelector: '.grid-item',
+//   percentPosition: true,
+//   columnWidth: '.grid-sizer'
+// });
+// // layout Masonry after each image loads
+// $grid.imagesLoaded().progress( function() {
+//   $grid.masonry();
+// });  
 
+// var freeMasonry = $('.masonry');
+
+// freeMasonry.imagesLoaded()
+//   .done(function(){
+//     freeMasonry.masonry({
+//       itemSelector: 'img'
+//     });
+//   });
+
+$(document).ready(function () {
+    var $container = $("#container");
+
+    $container.imagesLoaded(function () {
+        $container.masonry();
+    });
+});
 
 // // jQuery
 // $grid.masonry()
