@@ -12,13 +12,13 @@ function myFunction() {
 // external js: masonry.pkgd.js, imagesloaded.pkgd.js
 
 // init Masonry after all images have loaded
-// var $grid = $('.grid').imagesLoaded( function() {
-//   $grid.masonry({
-//     itemSelector: '.grid-item',
-//     percentPosition: true,
-//     columnWidth: '.grid-sizer'
-//   }); 
-// });
+var $grid = $('.grid').imagesLoaded( function() {
+  $grid.masonry({
+    itemSelector: '.grid-item',
+    percentPosition: true,
+    columnWidth: '.grid-sizer'
+  }); 
+});
 
 // external js: masonry.pkgd.js, imagesloaded.pkgd.js
 
@@ -42,13 +42,13 @@ function myFunction() {
 //     });
 //   });
 
-$(document).ready(function () {
-    var $container = $("#container");
+// $(document).ready(function () {
+//     var $container = $("#container");
 
-    $container.imagesLoaded(function () {
-        $container.masonry();
-    });
-});
+//     $container.imagesLoaded(function () {
+//         $container.masonry();
+//     });
+// });
 
 // // jQuery
 // $grid.masonry()
