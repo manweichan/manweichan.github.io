@@ -80,7 +80,7 @@ padding:0;
   }
 }
 
-.grid-sizer,
+/*.grid-sizer,
 .grid-item {
   width: calc(100%/3);
 }
@@ -95,4 +95,89 @@ padding:0;
 }
 
 
-.grid-item--width2 { width: 40%; }
+.grid-item-width2 { width: 40%; }*/
+
+#photo_container{
+  padding-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.hor_photo3-2{
+    background-position: center top;
+    background-size: 100% auto;
+    width: 80vw;  
+    height: calc(160vw/3);
+}
+
+.vert_container3-2{
+    width: 80vw;  
+    height: calc(39.5vw*3/2);
+    display: inline-block;
+
+}
+
+
+
+.vert_photo3-2{
+    background-position: center top;
+    background-size: 100% auto;
+    width: 39.5vw;  
+    height: calc(39.5vw*3/2);
+    float: left;
+}
+
+.hor_photo3-1{
+    background-position: center top;
+    background-size: 100% auto;
+    width: 80vw;  
+    height: calc(80*339vw/1000);
+}
+
+
+.inner_cont{
+  padding-bottom: 1%;
+}
+
+#milk_kayak{
+  background-image: url("../../../Images/photography/milky_kayak_web.jpg");
+}
+
+#maine_rise{
+  background-image: url("../../../Images/photography/maine_sunrise_web.jpg");
+}
+
+#maine_bee{
+  background-image: url("../../../Images/photography/maine_bee_web.jpg");
+}
+
+#luna_moon{
+  background-image: url("../../../Images/photography/luna_moon_web.jpg");
+}
+
+#ojos_trails{
+  background-image: url("../../../Images/photography/ojos_trails.jpg");
+}
+
+#space_way{
+  background-image: url("../../../Images/photography/space_way_web.jpg");
+}
+
+
+#ojos_point{
+  background-image: url("../../../Images/photography/ojos_point_web.jpg");
+  float: left;
+}
+
+#space60{
+  background-image: url("../../../Images/photography/space60.jpg");
+  float: right; 
+}
+
+#class_way{
+  background-image: url("../../../Images/photography/class_way_web.jpg");
+}
+
+#space72{
+  background-image: url("../../../Images/photography/space72.jpg");
+}
