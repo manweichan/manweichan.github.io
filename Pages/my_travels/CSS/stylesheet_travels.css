@@ -138,6 +138,13 @@ h3{
 
 }
 
+body:after{
+ display:none;
+ content: url("../../../Images/my_travels/chile_web.jpg") url("../../../Images/my_travels/geneva_web.jpg") 
+ url("../../../Images/my_travels/baltimore_web.jpg") url("../../../Images/my_travels/greatwall_web.jpg")
+ url("../../../Images/my_travels/annecy_web.jpg") url("../../../Images/my_travels/nepal_web.jpg");
+}
+
 #sp_pic{
     background-image: url("../../../Images/my_travels/chile_cropped_web.jpg");
 }
