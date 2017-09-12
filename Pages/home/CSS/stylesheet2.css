@@ -87,19 +87,23 @@ h1{
 }
 
 .welcome_text{
-    position: absolute;
+/*    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+*/    color: white;
     text-align: center;
     font-family: 'Cuprum', sans-serif;
 }
 
-#star_kayak{
-    display: block;
-    width: 100%;
-    height: auto;
+#parent{
+    width: 100vw;
+    height: calc(200vw/3);
+    background-image: url("../../../Images/home/star_kayak_web.jpg");
+    background-size: 100% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h2{
