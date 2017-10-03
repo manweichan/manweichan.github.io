@@ -82,13 +82,19 @@ padding:0;
 
 
 .welcome_text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: white;
     text-align: center;
     font-family: 'Cuprum', sans-serif;
+}
+
+#parent{
+    width: 100vw;
+    height: calc(153500vw/2880);
+    background-image: url("../../../Images/my_life/life_pic_cropped_web.jpg");
+    background-size: 100% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1{
@@ -110,12 +116,12 @@ h2{
     box-shadow: 0 10px 10px -10px #8c8b8b inset;
 }
 
-#my_life{
+/*#my_life{
     display: block;
     width: 100%;
     height: auto;
 }
-
+*/
 h3{
     float: left;
     width: 20%;
