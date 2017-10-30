@@ -121,7 +121,7 @@ h3{
     color: white;
     text-align: center;
     margin: 0;
-    padding: 120px 0;
+    /*padding: 120px 0;*/
 /*    position: absolute;
     top: 50%;
     left: 50%;
@@ -131,16 +131,20 @@ h3{
 .CLASS_parallax{
     /* The image used */
     background-image: url("../../../Images/my_work/milky_web_v3.jpg");
-/*
-     Set a specific height */
-    height: 400px; 
-/*    height: 100%;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    width: 100vw;  
+    height: calc(100vw/4);
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    /*background-size: cover;*/
+    background-size: 100% auto;
 }
 
 h4{
@@ -162,29 +166,37 @@ h4{
 .KWISP_parallax{
     /* The image used */
     background-image: url("../../../Images/my_work/KWISP_web.jpg");
-/*
-     Set a specific height */
-    height: 400px; 
-/*    height: 100%;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    width: 100vw;  
+    height: calc(100vw/4);
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    /*background-size: cover;*/
+    background-size: 100% auto;
 }
 
 .APL_parallax{
     /* The image used */
     background-image: url("../../../Images/my_work/PW_web.jpg");
-/*
-     Set a specific height */
-    height: 400px; 
-/*    height: 100%;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    width: 100vw;  
+    height: calc(100vw/4);
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    /*background-size: cover;*/
+    background-size: 100% auto;
 }

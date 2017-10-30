@@ -83,13 +83,19 @@ height: 100%;
 
 
 .welcome_text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: white;
     text-align: center;
     font-family: 'Cuprum', sans-serif;
+}
+
+#parent{
+    width: 100vw;
+    height: calc(153500vw/2880);
+    background-image: url("../../../Images/my_travels/travel_pic_web.jpeg");
+    background-size: 100% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #my_travels{
@@ -191,6 +197,10 @@ body:after{
 
 #nepal_pic:hover{
     background-image: url("../../../Images/my_travels/nepal_web.jpg");
+}
+
+@media screen and (min-width:801px) {
+  .content{display: block;}
 }
 
 .content{
