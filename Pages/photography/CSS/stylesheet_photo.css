@@ -143,6 +143,10 @@ padding:0;
   background-image: url("../../../Images/photography/milky_kayak_web.jpg");
 }
 
+#bjorn{
+  background-image: url("../../../Images/photography/bjorn_web.jpg");
+}
+
 #maine_rise{
   background-image: url("../../../Images/photography/maine_sunrise_web.jpg");
 }
@@ -156,7 +160,7 @@ padding:0;
 }
 
 #ojos_trails{
-  background-image: url("../../../Images/photography/ojos_trails.jpg");
+  background-image: url("../../../Images/photography/ojos_trails_web.jpg");
 }
 
 #space_way{
@@ -180,4 +184,16 @@ padding:0;
 
 #space72{
   background-image: url("../../../Images/photography/space72_web.jpg");
+}
+
+/*#llama_colorado{
+  background-image: url("../../../Images/photography/llama_colorado_web.jpg");
+}*/
+
+#llama_face{
+  background-image: url("../../../Images/photography/llama_face_web.jpg");
+}
+
+#truck{
+  background-image: url("../../../Images/photography/truck_web.jpg");
 }
