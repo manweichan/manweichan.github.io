@@ -199,9 +199,7 @@ body:after{
     background-image: url("../../../Images/my_travels/nepal_web.jpg");
 }
 
-@media screen and (min-width:801px) {
-  .content{display: block;}
-}
+
 
 .content{
     color: white;
@@ -251,4 +249,8 @@ a.para_link:active
 {
    color: white;
    text-decoration: underline;
+}
+
+@media screen and (min-width:801px) {
+  .content{display: block;}
 }
