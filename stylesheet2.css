@@ -108,9 +108,9 @@ h1{
 }
 
 h2{
-    font-size: 3em;
+    font-size: 2em;
     text-align: center;
-    padding: 10% 200px 10% 200px;
+    padding: 10% 10% 10% 10%;
     font-family: 'Indie Flower', cursive;
 }
 
@@ -166,6 +166,61 @@ h2{
 
 #pic_travel{
     padding-right: 25px;
+}
+
+#pinContainer {
+  /*width: 100vh;*/
+  height: 100vh;
+    overflow: hidden;
+/*    -webkit-perspective: 1000;
+            perspective: 1000;*/
+}
+/*#slideContainer {
+    width: 100%;  to contain 4 panels, each with 100% of window width 
+    height: 400%;
+}*/
+.panel {
+    height: 100%;
+    width: 100%; /* relative to parent -> 25% of 400% = 100% of window width */
+    float: left;
+    position: absolute;
+}
+
+.RSGS {
+    background-image: url("Images/my_work/RSGS_Dark.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+h4{
+    color: white;
+}
+
+#RSGS_descrip{
+    color: white;
+}
+
+.CLASS{
+    background-image: url("Images/my_work/CLASS_milky_v3_reduc_dark.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+#CLASS_descrip{
+    color: white;
+}
+
+.CERN{
+   background-image: url("Images/my_work/KWISP_web_dark.jpg");
+    background-size: cover;
+    /*background-position: center center; */
+}
+
+.APL{
+    background-image: url("Images/my_work/PW_web_dark.jpg");
+    background-size: cover;
+    background-position: center center;
+
 }
 
 a.nav-link:link
