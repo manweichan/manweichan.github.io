@@ -3,6 +3,10 @@ margin:0;
 padding:0;
 }
 
+.mobileContainer{
+    height: 100vh;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #333;
@@ -83,7 +87,8 @@ padding:0;
 
 h1{
     margin: 0;
-    font-size: 5rem;
+    /*font-size: 5rem;*/
+    font-size: 8vw;
     white-space: nowrap;
 }
 
@@ -94,7 +99,7 @@ h1{
     /*transform: translate(-50%, -50%);*/
     color: white;
     text-align: center;
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 #parent{
@@ -121,6 +126,7 @@ h2{
 }
 
 #links{
+
     text-align: justify;
     -ms-text-justify: distribute-all-lines;
     text-justify: distribute-all-lines;
@@ -129,6 +135,7 @@ h2{
 
 
 .link_photos{
+    width: calc(100%/3);
     padding-bottom: 125px;
 }
 
@@ -136,7 +143,8 @@ h2{
     padding-top: 125px;
     position: relative;
     float: center;
-    width: 500px;
+    /*width: 500px;*/
+    width: 100%;
     max-width: 100%;
     height: auto;
     background-position: 50% 50%;
@@ -160,15 +168,34 @@ h2{
 }
 
 #pic_me{
-    padding-left: 25px;
+    /*padding-left: 25px;*/
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pic_CLASS{
+   width: 80%;
+    margin-left: auto;
+    margin-right: auto; 
 }
 
 
 #pic_travel{
-    padding-right: 25px;
+    /*padding-right: 25px;*/
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #pinContainer {
+  /*width: 100vh;*/
+  height: 100vh;
+    overflow: hidden;
+/*    -webkit-perspective: 1000;
+            perspective: 1000;*/
+}
+#pinContainerTravel {
   /*width: 100vh;*/
   height: 100vh;
     overflow: hidden;
@@ -181,45 +208,352 @@ h2{
 }*/
 .panel {
     height: 100%;
-    width: 100%; /* relative to parent -> 25% of 400% = 100% of window width */
+    width: 100%; 
     float: left;
     position: absolute;
+    display: flex;
 }
 
+.panelTravel {
+    height: 100%;
+    width: 100%; 
+    float: left;
+    position: absolute;
+    display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+    #pinContainer {
+    height: 400vh;
+    overflow: hidden;}
+
+    #pinContainerTravel {
+        height: 700vh;
+        overflow: hidden;
+    }
+
+    .panel {
+    height: 25%;
+    width: 100%; 
+    float: left;
+    position: relative;
+} 
+
+    .panelTravel {
+    height: calc(100%/5);
+    width: 100%; 
+    float: left;
+    position: relative;
+} 
+}
+
+#workIntro{
+    height: 30vh;
+    /*width: 100%;*/
+    text-align: center;
+    background-color: #EDF1F2;
+    /*display: flex;*/
+}
+
+h3{
+    padding-top: 4%;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: black;
+    font-size: 350%;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#workTextContainer{
+    /*padding-top: 10%;*/
+    /*display: inline-block;*/
+    /*vertical-align: middle;*/
+
+}
+
+.workIntroText{
+    margin-top: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: x-large;
+    font-weight: 300;
+    color: black;
+    text-align: center;
+}
+
+.workText{
+    position: absolute;
+    bottom: 4%;
+    right: 5%;
+    left: 5%;
+    /*font-family: 'Chakra Petch', sans-serif;*/
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: x-large;
+    font-weight: 300;
+}
+
+
 .RSGS {
-    background-image: url("Images/my_work/RSGS_Dark.jpg");
+    background: 
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("Images/my_work/RSGS_Og.jpg"); 
+    /*background-image: url("Images/my_work/RSGS_Dark.jpg");*/
     background-size: cover;
     background-position: center center;
 }
 
 h4{
     color: white;
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Chakra Petch', sans-serif;
+    margin-bottom: 0;
 }
 
 #RSGS_descrip{
     color: white;
+    position: relative;
+    text-align: center;
+    /*line-height: 0;*/
+    margin-top: 0;
 }
 
+
 .CLASS{
-    background-image: url("Images/my_work/CLASS_milky_v3_reduc_dark.jpg");
+    background: 
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("Images/my_work/CLASS_milky_v3_reduc.jpg"); 
+    /*background-image: url("Images/my_work/CLASS_milky_v3_reduc.jpg");*/
     background-size: cover;
-    background-position: center center;
+    background-position: center bottom;
 }
 
 #CLASS_descrip{
     color: white;
+    margin-top: 0;
+    text-align: center;
+
 }
 
+
 .CERN{
-   background-image: url("Images/my_work/KWISP_web_dark.jpg");
+    background: 
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("Images/my_work/KWISP.jpg");
+   /*background-image: url("Images/my_work/KWISP.jpg");*/
     background-size: cover;
     /*background-position: center center; */
 }
 
+#KWISP_descrip{
+    color: white;
+    margin-top: 0;
+    text-align: center;
+
+}
+
+
+
 .APL{
-    background-image: url("Images/my_work/PW_web_dark.jpg");
+    background: 
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("Images/my_work/PW2.jpg");    
+    /*background-image: url("Images/my_work/PW2.jpg");*/
     background-size: cover;
     background-position: center center;
+
+}
+
+#APL_descrip{
+    color: white;
+    margin-top: 0;
+    text-align: center;
+
+}
+
+@keyframes jump { 0% { top: 0; } 50% { top: 10px; } 100% { top: 0; } }
+
+.scrollArrowContainer{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}
+
+.scrollArrow { position: relative; 
+    margin: 3% auto; 
+    text-align: center ; 
+    animation: jump 2s infinite;
+    bottom: 0px;
+}
+
+  i { content: '\f0a8'; font-family: 'FontAwesome'; font-size: 80px; }
+  i:hover { color: #FFAAAA; }
+
+i {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+/*i:hover { 
+    color: #FFAAAA; 
+}*/
+.fa{
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/*#workTravelSeparation{
+    height: 10vh;
+    background-color: #EDF1F2;
+
+}*/
+
+#travelIntro{
+    height: 30vh;
+    /*width: 100%;*/
+    text-align: center;
+    background-color: #EDF1F2;
+    /*display: flex;*/
+}
+
+#travelIntroContainer{
+/*    display: inline-block;
+    vertical-align: middle;*/
+    display: inline-block;
+
+}
+
+.travelIntroText{
+    margin-top: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: x-large;
+    font-weight: 300;
+    color: black;
+    text-align: center;
+}
+
+.travelText{
+    position: absolute;
+    bottom: 4%;
+    right: 5%;
+    left: 5%;
+    /*font-family: 'Chakra Petch', sans-serif;*/
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: x-large;
+    font-weight: 300;
+}
+
+
+
+.SPDA{
+    background: 
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("Images/my_travels/chile_web_bright.jpg");    background-size: cover;
+    background-position: center center;
+
+}
+
+#SPDA_descrip{
+    color: white;
+    text-align: center;
+
+}
+
+
+.Geneva{
+    background: 
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("Images/my_travels/geneva_web_bright.jpg");
+    background-size: cover;
+    background-position: center bottom;
+
+}
+
+#Geneva_descrip{
+    color: white;
+    text-align: center;
+
+}
+
+
+.Beijing{
+    background: 
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("Images/my_travels/great_wall_web_bright.jpg");    background-size: cover;
+    background-position: center center;
+
+}
+
+#Beijing_descrip{
+    color: white;
+    text-align: center;
+
+}
+
+
+.Annecy{
+    background: 
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("Images/my_travels/annecy_web_bright.jpg");    background-size: cover;
+    background-position: center center;
+
+}
+
+#Annecy_descrip{
+    color: white;
+    text-align: center;
+
+}
+
+
+.Nepal{
+    background: 
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("Images/my_travels/nepal_web_bright.jpg");    background-size: cover;
+    background-position: center center;
+
+}
+
+#Nepal_descrip{
+    color: white;
+    text-align: center;
 
 }
 

@@ -3,11 +3,16 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="stylesheet2.css">
 	<link href="https://fonts.googleapis.com/css?family=Cuprum|Indie+Flower" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Chakra+Petch:500,600,700|IBM+Plex+Sans:300,500,700" rel="stylesheet">
 	<script type="text/javascript" src="Js/script.js"></script>
+	 <!-- <meta name="viewport" content="width=device-width"> -->
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+
 </head>
 
 
 <body>
+<div id="scrollContainer">
 	<header><title>Manwei Chan</title></header>
 	
 	<div class="topnav" id="myTopnav">
@@ -72,32 +77,155 @@ Hi! I'm a space researcher who loves outdoor adventures. Currently, I'm studying
 </div>
 
 <div id="workIntro">
-	<h3>My Work</h3>
-	<p>A selection of projects I've worked on, beginning with the most recent. For more information, check out my <a href="Images/CV.pdf">CV</a></p>
+	<div id="workTextContainer">
+	<h3>MY  WORK</h3>
+	<p class="workIntroText">A selection of projects I've worked on, beginning with the most recent. For more information, check out my <a href="Images/CV.pdf">CV</a>.</p>
+	</div>
 </div>
 
 
 <!-- Work Slides -->
 <div id="pinContainer">
-	<div id="slideContainer">
+
+	<!-- <div id="slideContainer"> -->
 		<section class="panel RSGS">
+			<div id="RSGS_text" class="workText">
 			<h4>RSGS</h4>
-			<p id="RSGS_descrip">I work on the guidance, navigation, and control team for the Robotic Servicing of Geosynchronous Satellites (RSGS) at Draper Labs. My research is determining a guidance algorithm that will allow the servicing satellite to dock with an uncontrolled tumbling client satellite.</p>
+			<p id="RSGS_descrip">Currently, I work on the guidance, navigation, and control team for the Robotic Servicing of Geosynchronous Satellites (RSGS) at Draper Labs. I am developing a guidance algorithm that will allow the servicing satellite to dock with an uncontrolled tumbling client satellite.</p>
+			</div>
+
+			<div class="scrollArrowContainer">
+			<div class="scrollArrow">
+			<i class="fa fa-chevron-down"></i>
+			</div>
+			</div>
+
 		</section>
-		<section class="panel CLASS">
-			<h4>CLASS</h4>
-			<p id="CLASS_descrip">I worked on the Cosmology Large Angular Scale Surveyor (CLASS), a telescope studying the origins of our universe. Specifically, CLASS is looking for details in the Cosmic Microwave Background for signs of inflation. With CLASS, a prepared the 90GHz cryostat for deployment in the field and was later the senior technician at the site in Chile.</p>
+		<section class="panel CLASS" id="CLASSWorkPic">
+			<div id="CLASS_text" class="workText">
+			<!-- <h4>CLASS</h4> -->
+		<!-- 	<p id="CLASS_descrip">I worked on the Cosmology Large Angular Scale Surveyor (CLASS), a telescope studying the origins of our universe, from 2013-2017. Specifically, CLASS is looking for details in the Cosmic Microwave Background for signs of inflation. With CLASS, I prepared the 90GHz cryostat for deployment as an undergraduate researcher and was later the senior technician at the site in Chile. -->
+<!-- 				2013-2017
+				COSMOLOGY LARGE ANGULAR SCALE SURVEYOR (CLASS)
+				CLASS is searching for signs of inflation which occurred moments after the Big Bang.  As a research assistant I prepared the 90GHz cryotstat.  When CLASS was deployed in Chile, I was a senior site technician. -->
+			<!-- </p> -->
+			<h4>CLASS Telescope (2013-2017)</h4>
+			<p id="CLASS_descrip">The Cosmology Large Angular Scale Surveyor (CLASS) is searching for signs of inflation which occurred moments after the Big Bang.  As a research assistant I prepared the 90GHz cryotstat.  When CLASS was deployed in Chile, I was a senior site technician.</p>
+			</div>
+
+			<div class="scrollArrowContainer">
+			<div class="scrollArrow">
+			<i class="fa fa-chevron-down"></i>
+			</div>
+			</div>
 		</section>
 		<section class="panel CERN"> 
-			<b>THREE</b>
+			<div id="CERN_text" class="workText">
+			<h4>CERN (2015)</h4>
+			<p id="KWISP_descrip">I worked with Professor Giovanni Cantatore at The European Organization for Nuclear Research or CERN (Conseil Européen pour la Recherche Nucléaire) in 2015. On the KWISP (Kinetic WISP Detection) project, I worked with the optical set up to prepare a detector looking for the hypothesized Chameleon particle.</p>
+			</div>
+
+			<div class="scrollArrowContainer">
+			<div class="scrollArrow">
+			<i class="fa fa-chevron-down"></i>
+			</div>
+			</div>
 		</section>
 		<section class="panel APL">
-			<b>FOUR</b>
+			<div id="APL_text" class="workText">
+			<h4>APL (2014)</h4>
+			<p id="APL_descrip">At the Johns Hopkins Applied Physics Lab, I determined the amount of interference an underwater sound sensor may hear from sperm whale vocalizations (sonar).</p>
+			</div>
+
+			<div class="scrollArrowContainer">
+			<div class="scrollArrow">
+			<i class="fa fa-chevron-down"></i>
+			</div>
+			</div>
 		</section>
+	<!-- </div> -->
+					
+</div>
+
+<div id="workTravelSeparation"></div>
+
+<div id="travelIntro">
+	<div id="travelIntroContainer">
+	<h3>MY ADVENTURES</h3>
+	<p class="travelIntroText">A selection of the adventures I've been on, beginning with the most recent. </p>
 	</div>
 </div>
 
+<div id="pinContainerTravel">
 
+	<!-- <div id="slideContainer"> -->
+		<section class="panelTravel SPDA" id="SPDAWorkPic">
+			<div id="SPDA_text" class="travelText">
+			<h4>San Pedro de Atacama (2016-2017)</h4>
+			<p id="SPDA_descrip">I lived in the desert town of San Pedro de Atacama for a year while working on the CLASS telescope. In my spare time, I enjoyed exploring high altitude lakes, flamingoes, and geysers. I also had the opportunity to visit the Uyuni salt flat in Bolivia and Patagonia in Argentina.
+			</p>
+			</div>
+
+			<div class="scrollArrowContainer">
+			<div class="scrollArrow">
+			<i class="fa fa-chevron-down"></i>
+			</div>
+			</div>
+		</section>
+		<section class="panelTravel Geneva"> 
+			<div id="Geneva_text" class="travelText">
+			<h4>Geneva (2015)</h4>
+			<p id="KWISP_descrip">I spent half a year in Geneva while working at CERN. The beauty of lakes, mountains combined with Switzerland's central location in Europe made it a great homebase for exploration.</p>
+			</div>
+
+			<div class="scrollArrowContainer">
+			<div class="scrollArrow">
+			<i class="fa fa-chevron-down"></i>
+			</div>
+			</div>
+		</section>
+		<section class="panelTravel Beijing">
+			<div id="Beijing_text" class="travelText">
+			<h4>Beijing (2012)</h4>
+			<p id="Beijing_descrip">This was the first time I visited Asia, and I will never forget the historical sites, friends, and food I encountered during my time. Highlights of my stay in Asia includ visiting Hong Kong, Thailand, and Cambodia.</p>
+			</div>
+
+			<div class="scrollArrowContainer">
+			<div class="scrollArrow">
+			<i class="fa fa-chevron-down"></i>
+			</div>
+			</div>
+		</section>
+		<section class="panelTravel Annecy">
+			<div id="Annecy_text" class="travelText">
+			<h4>Annecy (2012)</h4>
+			<p id="Annecy_descrip">Through a language exchange program, I lived in a homestay in the quaint town of Annecy. Its proximity to the Alps offered plenty of skiing opportunities.</p>
+			</div>
+
+			<div class="scrollArrowContainer">
+			<div class="scrollArrow">
+			<i class="fa fa-chevron-down"></i>
+			</div>
+			</div>
+		</section>
+		<section class="panelTravel Nepal">
+			<div id="Nepal_text" class="travelText">
+			<h4>Nepal</h4>
+			<p id="Nepal_descrip">I volunteered to teach English at a Buddhist monastery with the hopes that I could gain some of their wisdom on the path to enlightenment.</p>
+			</div>
+
+			<div class="scrollArrowContainer">
+			<div class="scrollArrow">
+			<i class="fa fa-chevron-down"></i>
+			</div>
+			</div>
+		</section>
+	<!-- </div> -->
+					
+</div>
+
+
+</div>
 <!-- Scripts  -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js">
 </script>
