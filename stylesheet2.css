@@ -85,10 +85,11 @@ padding:0;
 }
 
 
+
 h1{
     margin: 0;
     /*font-size: 5rem;*/
-    font-size: 8vw;
+    font-size: 7vw;
     white-space: nowrap;
 }
 
@@ -97,9 +98,11 @@ h1{
     top: 50%;
     left: 50%;*/
     /*transform: translate(-50%, -50%);*/
+    /*width: 70%;*/
     color: white;
     text-align: center;
     font-family: 'IBM Plex Sans', sans-serif;
+    /*float: right;*/
 }
 
 #parent{
@@ -110,13 +113,62 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    /*padding-top: 10%;*/
+}
+
+
+
+#facePicContainer{
+    width: 100vw;
+    display: flex;
+    align-content: center;
+    text-align: center;
+}
+
+#facePic{
+    /*width: 10%;*/
+    width: 25%;
+    float: left;
+    margin: auto;
+    /*padding-left: 5%;*/
+    /*align-content: center;*/
+    /*max-width: 100%;*/
+}
+
+@media screen and (max-width: 600px) {
+    #facePic{
+        width: 50%;
+    }
+}
+
+#face_pic_img{
+    max-width: 100%;
+}
+
+#spacer1{
+    position: relative;
+    height: 10vh;
+}
+
+#introContainer{
+    /*display: flex;*/
+    /*display: block;*/
+    /*padding-top: 3%;*/
+    padding-bottom: 7%;
 }
 
 h2{
     font-size: 2em;
     text-align: center;
-    padding: 10% 10% 10% 10%;
-    font-family: 'Indie Flower', cursive;
+    /*padding: 10% 10% 10% 10%;*/
+    /*font-family: 'Indie Flower', cursive;*/
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
+    /*float: right;*/
+    /*width: 80vw;*/
+    margin-top: 0;
+    padding: 5%;
+
 }
 
 .hor_line {
@@ -161,10 +213,12 @@ h2{
 
 .caption{
     padding-top: 10px;
-    font-size: 30px;
+    /*font-size: 30px;*/
     display: block;
     text-align: center;
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: x-large;
+    font-weight: 700;
 }
 
 #pic_me{
@@ -312,6 +366,12 @@ h4{
     font-size: xx-large;
     font-family: 'Chakra Petch', sans-serif;
     margin-bottom: 0;
+    /*font-weight: 500;*/
+}
+
+.lighth4{
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 300;
 }
 
 #RSGS_descrip{
@@ -477,6 +537,7 @@ i {
 #SPDA_descrip{
     color: white;
     text-align: center;
+    margin-top: 0;
 
 }
 
@@ -497,6 +558,7 @@ i {
 #Geneva_descrip{
     color: white;
     text-align: center;
+    margin-top: 0;
 
 }
 
@@ -516,6 +578,7 @@ i {
 #Beijing_descrip{
     color: white;
     text-align: center;
+    margin-top: 0;
 
 }
 
@@ -535,6 +598,7 @@ i {
 #Annecy_descrip{
     color: white;
     text-align: center;
+    margin-top: 0;
 
 }
 
@@ -554,6 +618,7 @@ i {
 #Nepal_descrip{
     color: white;
     text-align: center;
+    margin-top: 0;
 
 }
 

@@ -17,7 +17,8 @@
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 TweenMax.fromTo("#growText", 20, {opacity: 0}, {opacity: 1, ease:Power2.easeOut});
 TweenMax.fromTo(".siteContents", 20, {opacity: 0}, {opacity: 1, ease:Power2.easeOut});
-TweenMax.fromTo("#shortDescrip", 20, {opacity: 0}, {opacity: 1, ease:Power2.easeOut});
+TweenMax.fromTo("#introContainer", 20, {opacity: 0}, {opacity: 1, ease:Power2.easeOut});
+TweenMax.fromTo("#facePicContainer", 20, {opacity: 0}, {opacity: 1, ease:Power2.easeOut});
 }else
 {
 TweenMax.fromTo("#growText", 20, {opacity: 0}, {opacity: 1, ease:Power2.easeOut});
@@ -29,13 +30,20 @@ var tween = TweenMax.fromTo(".siteContents", 5, {opacity: 0}, {opacity:1});
 // build scene
 var scene = new ScrollMagic.Scene({triggerElement: "#trigger1",  duration: 0, offset: -50})
         .setTween(tween)
-        .addIndicators({name: "indicator"}) // add indicators (requires plugin)
+        // .addIndicators({name: "indicator"}) // add indicators (requires plugin)
         .addTo(controller);
 
-var tween2 = TweenMax.fromTo("#shortDescrip", 5, {opacity: 0}, {opacity:1});
+// var tween2 = TweenMax.fromTo("#shortDescrip", 5, {opacity: 0}, {opacity:1});
+var tween2 = TweenMax.fromTo("#introContainer", 5, {opacity: 0}, {opacity:1});
+var tween3 = TweenMax.fromTo("#facePicContainer", 5, {opacity: 0}, {opacity:1});
 var scene = new ScrollMagic.Scene({triggerElement: "#triggerh2",  duration: 0, offset: -50})
         .setTween(tween2)
-        .addIndicators({name: "indicatorh2"}) // add indicators (requires plugin)
+        // .addIndicators({name: "indicatorh2"}) // add indicators (requires plugin)
+        .addTo(controller);
+
+var scene = new ScrollMagic.Scene({triggerElement: "#triggerh2",  duration: 0, offset: -50})
+        .setTween(tween3)
+        // .addIndicators({name: "indicatorh2"}) // add indicators (requires plugin)
         .addTo(controller);
 
   $(function () { // wait for document ready
@@ -56,7 +64,7 @@ var scene = new ScrollMagic.Scene({triggerElement: "#triggerh2",  duration: 0, o
       })
       .setPin("#pinContainer")
       .setTween(wipeAnimation)
-      .addIndicators() // add indicators (requires plugin)
+      // .addIndicators() // add indicators (requires plugin)
       .addTo(controller);
   });
 
@@ -80,9 +88,24 @@ var scene = new ScrollMagic.Scene({triggerElement: "#triggerh2",  duration: 0, o
       })
       .setPin("#pinContainerTravel")
       .setTween(wipeAnimationTravel)
-      .addIndicators() // add indicators (requires plugin)
+      // .addIndicators() // add indicators (requires plugin)
       .addTo(controller);
   });
+
+// $(document).ready(function() {
+//    $('#workLink').localScroll({duration:1000});
+// });
+
+$("#workLink").click(function(){   //id of the link which is being clicked
+      $('html, body').animate({
+             scrollTop: $("#workIntro").offset().top   //id of div to be scrolled
+      }, 800);
+});
+$("#travelLink").click(function(){   //id of the link which is being clicked
+      $('html, body').animate({
+             scrollTop: $("#travelIntro").offset().top   //id of div to be scrolled
+      }, 1200);
+});
 
 }
 
