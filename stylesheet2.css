@@ -219,6 +219,10 @@ h2{
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: x-large;
     font-weight: 700;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+
 }
 
 #pic_me{
@@ -237,6 +241,12 @@ h2{
 
 #pic_travel{
     /*padding-right: 25px;*/
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pic_photo{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -302,7 +312,7 @@ h2{
 }
 
 #workIntro{
-    height: 30vh;
+    /*height: 30vh;*/
     /*width: 100%;*/
     text-align: center;
     background-color: #EDF1F2;
@@ -323,6 +333,8 @@ h3{
     /*padding-top: 10%;*/
     /*display: inline-block;*/
     /*vertical-align: middle;*/
+    padding-bottom: 2%;
+    padding-top: 2%;
 
 }
 
@@ -333,6 +345,8 @@ h3{
     font-weight: 300;
     color: black;
     text-align: center;
+    margin-bottom: 0;
+    padding: 5%;
 }
 
 .workText{
@@ -486,7 +500,7 @@ i {
 }*/
 
 #travelIntro{
-    height: 30vh;
+    /*height: 30vh;*/
     /*width: 100%;*/
     text-align: center;
     background-color: #EDF1F2;
@@ -497,8 +511,8 @@ i {
 /*    display: inline-block;
     vertical-align: middle;*/
     display: inline-block;
-
-}
+    padding-bottom: 2%;
+    padding-top: 2%;}
 
 .travelIntroText{
     margin-top: 0;
@@ -507,6 +521,8 @@ i {
     font-weight: 300;
     color: black;
     text-align: center;
+    padding: 5%;
+    margin-bottom: 0;
 }
 
 .travelText{
@@ -518,6 +534,7 @@ i {
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: x-large;
     font-weight: 300;
+
 }
 
 
