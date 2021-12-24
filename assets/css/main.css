@@ -2680,6 +2680,64 @@ input, select, textarea {
 				width: 100%;
 			}
 
+/* Image_vert */
+
+	.image_vert {
+		border: 0;
+		border-radius: 4px;
+		display: inline-block;
+		position: relative;
+		max-height: 100%;
+	}
+
+		.image_vert img {
+			display: block;
+			border-radius: 4px;
+			max-height: 100%;
+
+		}
+
+		.image_vert.left, .image_vert.right {
+			width: 40%;
+			max-width: 10rem;
+		}
+
+			.image_vert.left img, .image_vert.right img {
+				width: 100%;
+			}
+
+		.image_vert.left {
+			float: left;
+			margin: 0 1.5rem 1rem 0;
+			top: 0.25rem;
+		}
+
+		.image_vert.right {
+			float: right;
+			margin: 0 0 1rem 1.5rem;
+			top: 0.25rem;
+		}
+
+		.image_vert.fit {
+			display: block;
+			margin: 0 0 2rem 0;
+			width: 100%;
+		}
+
+			.image_vert.fit img {
+				width: 100%;
+			}
+
+		.image_vert.main {
+			display: block;
+			margin: 0 0 3rem 0;
+			width: 100%;
+		}
+
+			.image_vert.main img {
+				width: 100%;
+			}
+
 /* List */
 
 	ol {
